@@ -1,0 +1,18 @@
+.container{
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-rows: repeat(16,10px);
+    grid-template-columns: repeat(16,10px);
+    grid-gap: 1px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.box{
+    width : 10px;
+    height : 10px;
+    border: 1px solid #000000;
+}
