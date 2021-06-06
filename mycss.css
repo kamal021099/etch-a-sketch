@@ -1,18 +1,27 @@
-.container{
+:root{
+    --size: 16;
+}
+
+.grid-container{
     position: relative;
-    top: 50px;
+    top: 80px;
     display: grid;
-    grid-template-rows: repeat(16,10px);
-    grid-template-columns: repeat(16,10px);
-    grid-gap: 1px;
     justify-content: center;
     align-content: center;
+}
+
+.container{
+    display: grid;
+    height: 720px;
+    width: 720px;
+    grid-template-rows: repeat(var(--size),1fr);
+    grid-template-columns: repeat(var(--size),1fr);
+    /* grid-gap: 1px; */
+    border: 1px solid #000000;
 }
 
 
 
 .box{
-    width : 10px;
-    height : 10px;
-    border: 1px solid #000000;
+    border: .1px solid #000000;
 }
